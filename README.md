@@ -24,7 +24,33 @@ To develop a Reinforcement Learning agent using the SARSA control algorithm that
 
 
 ## Environment Description
+The FrozenLake environment is a 4 × 4 grid-based environment provided by Gymnasium.
 
+It consists of four types of tiles:
+
+| Symbol | Description                  |
+|:------:|------------------------------|
+| S      | Starting position            |
+| F      | Frozen surface (safe)         |
+| H      | Hole (game ends)              |
+| G      | Goal (game ends with reward)  |
+
+### Actions
+
+| Action | Value |
+|--------|------:|
+| Left   | 0     |
+| Down   | 1     |
+| Right  | 2     |
+| Up     | 3     |
+
+### Rewards
+
+- Reaching the goal: +1
+- Falling into a hole: 0
+- Moving on frozen surfaces: 0
+
+The environment uses `is_slippery=True`, which means the agent may move in an unintended direction due to slippery ice.
 
 
 ## Theory
