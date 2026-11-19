@@ -6,7 +6,7 @@ To implement the **SARSA control algorithm** using the Gymnasium `FrozenLake-v1`
 
 ---
 
-## Problem Statement
+
 
 ## Problem Statement
 
